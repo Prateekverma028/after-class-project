@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multiplication In HTML</title>
+    </head>
+    <body>
+        <h1>Click on the button below and get the multiplication of 4 and 5...</h1>
+        <button onclick="multiply(4)">Click ME!</button>
+        <p id="result"></p>
+        <script>
+            function multiply(a,b){
+                if(b === undefined ){
+                    alert ("the value of b is undefined");
+                    b  = 5;
+                }
+                var result = a * b;
+                document.getElementById("result").innerHTML = result;
+            }
+        </script>
+    </body>
+</html>
