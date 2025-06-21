@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sum in HTML</title>
+    </head>
+    <body>
+        <h2>Sum of Two Numbers</h2>
+<button onclick="showSum(12, 23)"> Add 12 + 23</button>
+
+<p id="sumResult"></p>
+<script>
+function addNumbers (a, b) {
+var expressional =a + "+" + b;
+var result= eval(expression);
+return result;
+}
+function showSum(a, b) { 
+var result= addNumbers (a, b);
+}
+document.getElementById('sumResult').innerText = "Sum: " + result;
+</script>
+    </body>
+</html>
