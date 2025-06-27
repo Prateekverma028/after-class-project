@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array in Html</title>
+    </head>
+    <body>
+        <h2>Array in html</h2>
+        <p id="demo"></p>
+        <p id="pop1"></p>
+        <p id="pop2"></p>
+        <p id="join"></p>
+        <script>
+            var cars = ["Bugatti","Rools Roys","Supra","Nissan-GTR","Dodge Challenger SRT"];
+            document.getElementById("demo").innerHTML = cars[2];
+            document.getElementById("join").innerHTML = cars.join ("--->");
+            document.getElementById("pop1").innerHTML = cars;
+            cars.pop()
+            document.getElementById("pop2").innerHTML = cars;
+        </script>
+    </body>
+</html>
